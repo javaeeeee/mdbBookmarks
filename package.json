@@ -1,0 +1,29 @@
+{
+  "name": "mdbbookmarks",
+  "version": "0.0.1",
+  "description": "This is a simple project to apply knowledge from a MongoDBx: M101x Introduction to MongoDB using the MEAN Stack edX course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javaeeeee/mdbBookmarks.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "REST",
+    "MongoDB",
+    "Mongoose",
+    "Gulp",
+    "Mocha",
+    "Testing"
+  ],
+  "author": "Dmitry Noranovich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javaeeeee/mdbBookmarks/issues"
+  },
+  "homepage": "https://github.com/javaeeeee/mdbBookmarks#readme"
+}

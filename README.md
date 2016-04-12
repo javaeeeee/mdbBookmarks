@@ -1,0 +1,1 @@
+This is a simple project to apply knowledge from a MongoDBx: M101x Introduction to MongoDB using the MEAN Stack edX course.
