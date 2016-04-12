@@ -4,7 +4,8 @@
   "description": "This is a simple project to apply knowledge from a MongoDBx: M101x Introduction to MongoDB using the MEAN Stack edX course.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha ./tests/*.js",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,15 @@
   "bugs": {
     "url": "https://github.com/javaeeeee/mdbBookmarks/issues"
   },
-  "homepage": "https://github.com/javaeeeee/mdbBookmarks#readme"
+  "homepage": "https://github.com/javaeeeee/mdbBookmarks#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "http-status": "^0.2.1",
+    "mongoose": "^4.4.12"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
 }
