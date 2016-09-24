@@ -1,24 +1,24 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var userSchema = {
-    profile: {
-        username: {
-            type: String,
-            required: true,
-            unique: true
-        },
-        email: {
-            type: String,
-            required: true,
-            match: /.+@.+\..+/
-        }
+const userSchema = {
+  profile: {
+    username: {
+      type: String,
+      required: true,
+      unique: true,
     },
-    credentials: {
-        password: {
-            type: String,
-            required: true
-        }
-    }
+    email: {
+      type: String,
+      required: true,
+      match: /.+@.+\..+/,
+    },
+  },
+  credentials: {
+    password: {
+      type: String,
+      required: true,
+    },
+  },
 };
 
 module.exports = new mongoose.Schema(userSchema);
