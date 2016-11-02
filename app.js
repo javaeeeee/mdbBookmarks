@@ -24,8 +24,7 @@ app.use(function (req, res, next) {
 
 // development error handler
 const devErrorHandler = function (err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
+  res.status(err.status || 500).json({
     message: err.message,
     error: err,
   });
@@ -37,8 +36,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 const productionErrorHandler = function (err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
+  res.status(err.status || 500).json({
     message: err.message,
     error: {},
   });
