@@ -1,4 +1,9 @@
 require('./schema/db');
+const routes = require('./routes/routes');
+const express = require('express');
 
-//console.log(JSON.stringify(user));
-//console.log(user.userSchema);
+const app = express();
+
+app.use('/', routes);
+
+module.exports = app;
