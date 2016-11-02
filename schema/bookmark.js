@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const User = require('./user');
+//const User = require('./user');
 
 const bookmarkSchema = {
   name: {
@@ -16,7 +16,7 @@ const bookmarkSchema = {
     type: String,
     maxlength: 1024,
   },
-  user: User.userSchema,
+  //user: User.userSchema,
 };
 
 module.exports = new mongoose.Schema(bookmarkSchema);

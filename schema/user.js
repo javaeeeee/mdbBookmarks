@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const Bookmark = require('./bookmark');
+
 const userSchema = {
   profile: {
     username: {
@@ -19,6 +21,7 @@ const userSchema = {
       required: true,
     },
   },
+  bookmarks: [Bookmark],
 };
 
 module.exports = new mongoose.Schema(userSchema);

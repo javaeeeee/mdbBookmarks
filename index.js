@@ -1,4 +1,4 @@
-const user = require('./schema/user');
+require('./schema/db');
 
-console.log(JSON.stringify(user));
-console.log(user.userSchema);
+//console.log(JSON.stringify(user));
+//console.log(user.userSchema);
