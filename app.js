@@ -3,7 +3,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 
 require('./app/schema/db');
-const routes = require('./app/routes/routes');
+const routes = require('./app/routes/bookmarks');
 
 const app = express();
 
@@ -14,11 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', routes);
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
+const catchNotFound = function (req, res, next) {
   const err = new Error('Not Found');
   err.status = 404;
   next(err);
-});
+};
+app.use(catchNotFound);
 
 // error handlers
 
@@ -43,6 +44,5 @@ const productionErrorHandler = function (err, req, res, next) {
 };
 // no stacktraces leaked to user
 app.use(productionErrorHandler);
-
 
 module.exports = app;

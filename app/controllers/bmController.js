@@ -7,6 +7,9 @@ const users = mongoose.model('Users', user);
 const CODE = 200;
 const STATUS = 'success';
 
+/**
+ * Fake response.
+ */
 const printStatus = function (res, code, status) {
   res.status(code);
   res.json({ status });
