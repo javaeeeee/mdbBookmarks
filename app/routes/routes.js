@@ -11,4 +11,3 @@ router.put('/bookmarks/:id', controller.modify);
 router.delete('/bookmarks/:id', controller.remove);
 
 module.exports = router;
- 
